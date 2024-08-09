@@ -1,0 +1,92 @@
+.subscribe {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: fit-content;
+}
+
+.subscribe-info {
+  display: flex;
+  gap: 30px;
+}
+
+.subscribe-info .left {
+  width: 70%;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  p {
+    color: #777;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: -5px;
+    margin-bottom: 40px;
+  }
+}
+
+.subscribe-info .left form {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+}
+
+.subscribe-info .left form input {
+  width: 30%;
+  padding: 8px;
+}
+
+.subscribe-info .left form button {
+  background: #222;
+  padding: 8px 15px;
+  border: none;
+  transition: 0.5s;
+
+  svg {
+    font-size: 18px;
+    color: #eee;
+  }
+}
+
+.subscribe-info .left form button:hover {
+  background-color: gray;
+}
+
+.subscribe-info .right {
+  width: 40%;
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.subscribe-info .right .one,
+.subscribe-info .right .two {
+  flex: 1;
+}
+
+.subscribe-info .right .box div h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.subscribe-info .right .box div p {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .subscribe-info {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .subscribe-info .left {
+    width: 100%;
+  }
+
+  .subscribe-info .right {
+    width: 100%;
+  }
+}

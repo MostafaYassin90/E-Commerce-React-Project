@@ -1,0 +1,75 @@
+.about {
+  padding-top: 50px;
+}
+
+.about .main-title {
+  font-weight: 700;
+  padding-left: 100px;
+  margin-bottom: 40px;
+}
+
+.about .about-img {
+  width: 100%;
+  padding: 0 50px;
+}
+
+.about .about-img img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.about .title {
+  margin: 30px 0;
+  font-weight: 700;
+}
+
+.about .text {
+  width: 78%;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.about .text.two {
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 50px;
+}
+
+.about-task {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.about-task div p {
+  width: 70%;
+}
+
+.about .about-company {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+
+.about .about-company .about-company-img {
+  width: 100%;
+}
+
+.about .about-company .about-company-img img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.about .about-company .text {
+  flex: 1;
+}
+
+.about .about-company .text p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  width: 70%;
+  font-size: 14px;
+  line-height: 2;
+}

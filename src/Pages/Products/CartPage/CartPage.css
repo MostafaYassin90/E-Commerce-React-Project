@@ -1,0 +1,236 @@
+.cart-page {
+  min-height: 100vh;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.cart-page .main-title {
+  width: fit-content;
+  font-weight: 700;
+  font-size: 40px;
+  color: #171717;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.cart-page .clear-cart-btn {
+  background: #000;
+  color: #fff;
+  padding: 5px 25px;
+  font-size: 17px;
+  font-weight: 500;
+  border: 1px solid #000;
+  transition: 0.3s;
+}
+
+.cart-page .clear-cart-btn:hover {
+  background-color: brown;
+  color: #fff;
+  border-color: brown;
+}
+
+/* table stylish */
+.cart-page table {
+  border-bottom: 1px solid #999;
+}
+
+.cart-page table thead tr th {
+  padding: 20px 0;
+}
+
+.cart-page table tbody td {
+  padding: 30px 0;
+  height: 180px;
+}
+
+.cart-page table tbody td>div {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cart-page table tbody td div.product-info p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.cart-page table tbody td div.price,
+.cart-page table tbody td div.subtotal {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.cart-page table tr {
+  border-bottom: 1px solid #999 !important;
+}
+
+.cart-page table tbody tr td:not(.product) {
+  position: relative;
+}
+
+.cart-page table td .quantity {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  background: #fff;
+  text-align: center;
+
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.cart-page table td .quantity span {
+  color: #000;
+  font-weight: 700;
+  width: 100%;
+  padding: 2px;
+}
+
+.cart-page table td .quantity .min,
+.cart-page table td .quantity .max {
+  background-color: #eee;
+}
+
+.cart-page table td .quantity .min {
+  cursor: pointer;
+}
+
+.cart-page table td .quantity .number {
+  font-size: 17px;
+}
+
+.cart-page table td .quantity .max {
+  cursor: pointer;
+}
+
+.cart-page table td .close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #eee;
+  left: 30% !important;
+}
+
+/*  Total Price */
+.cart-page .total-price {
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  width: 200px;
+  margin-top: 40px;
+  padding: 10px;
+  justify-content: space-between;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.cart-page .total-price .price-text {
+  flex: 1;
+  border-right: 1px solid #999;
+}
+
+.cart-page .total-price .price-number {
+  flex: 1;
+  text-align: center;
+  border-left: 1px solid #999;
+}
+
+/* No Product Sylish */
+.cart-page .no-product {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/*  Small Product Here Media Queries When Window SIze Is Lower Than 768px */
+.small-product {
+  display: flex;
+  padding: 30px 0;
+  gap: 15px;
+  border-bottom: 1px solid #bbb;
+}
+
+.small-product .holder-img {
+  width: 40%;
+}
+
+.small-product .holder-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.small-product .small-product-info {
+  width: 100%;
+}
+
+.small-product .small-product-info .top {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.small-product .small-product-info .top .top-title {
+  font-size: 18px;
+  flex: 1;
+}
+
+.small-product .small-product-info .top .top-icon {
+  width: 35px;
+  height: 35px;
+  box-sizing: border-box !important;
+  padding: 10px;
+  border-radius: 50%;
+  background: #eee;
+  cursor: pointer;
+}
+
+.small-product .small-product-info .center {
+  margin-bottom: 20px;
+}
+
+.small-product .small-product-info .center .color,
+.small-product .small-product-info .center .size {
+  margin: 0;
+  color: #454545;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.small-product .small-product-info .bot {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.small-product .small-product-info .bot .quan {
+  width: 100px;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.small-product .small-product-info .bot .quan>span {
+  flex: 1;
+  text-align: center;
+  font-weight: 700;
+}
+
+.small-product .small-product-info .bot .quan>span.max,
+.small-product .small-product-info .bot .quan>span.min {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.small-product .small-product-info .bot>.price {
+  font-weight: 700;
+}

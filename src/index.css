@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+/* Bootstrap */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+* {
+  box-sizing: border-box !important;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+}
+
+.container-fluid {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.theme.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.theme.dark .subscribe {
+  background-color: none !important;
+}
+
+.theme.dark .latest .holder .holder-products .product .product-action .cart {
+  color: #Fff;
+}
+
+.theme.dark .latest .holder .holder-products .product .product-action .cart:hover::before {
+  background-color: #fff;
+}
+
+.theme.dark .holder-arrow .arrow {
+  border: 1px solid #bbb;
+}
+
+.theme.dark .landing .left img {
+  width: 100%;
+  height: 100%;
+}
+
+.theme.dark .scroll-top {
+  background-color: #333;
+}
+
+.theme.dark {
+  background-color: #111;
+  color: #ddd;
+}

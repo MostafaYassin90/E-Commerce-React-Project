@@ -1,0 +1,242 @@
+.navbar-app {
+  background-color: #fff;
+  height: 90px;
+  border-bottom: 2px dashed #000;
+  transition: 1s all;
+}
+
+.navbar-app.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  transition: 1s all ease-in-out;
+}
+
+.navbar-app .container {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-app .logo {
+  display: flex;
+  align-content: center;
+  gap: 15px;
+  width: 260px;
+  text-decoration: none;
+}
+
+.navbar-app .logo-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.navbar-app .logo-text {
+  h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    color: #171717;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    color: #777;
+    font-size: 15px;
+    margin-top: -2px;
+  }
+}
+
+.navbar-app-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-app-nav .links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 5px;
+}
+
+.navbar-app-nav .links li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar-app-nav .links li a:hover {
+  color: #999;
+}
+
+.navbar-app-nav .links li a.active {
+  color: #999;
+}
+
+/*  Cart And Favoriteb Shopping */
+.navbar-app-nav .icons-shoping {
+  margin-left: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-app-nav .icon-cart,
+.navbar-app-nav .icon-favorite {
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar-app-nav .icon-cart::before {
+  content: attr(data-count);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #fff;
+  font-size: 15px;
+}
+
+.navbar-app-nav .icon-cart::before {
+  background-color: #6c757d;
+  top: 22px;
+  left: -10px;
+}
+
+.navbar-app-nav .icon-cart .navbar-icon-cart,
+.navbar-app-nav .icon-favorite .navbar-icon-favorite {
+  font-size: 23px;
+  color: #171717;
+}
+
+.navbar-app-nav .icon-cart {
+  margin-bottom: 8px;
+}
+
+/*  Toggle Icon Here */
+.navbar-app .toggle-icon {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  svg {
+    font-size: 30px;
+  }
+}
+
+.navbar-app .toggle-icon {
+  display: none;
+}
+
+/*  Respnseive NavBar */
+@media (max-width: 992px) {
+  .navbar-app-nav .links {
+    gap: 4px;
+  }
+
+  .navbar-app-nav .links li a {
+    font-size: 15px;
+  }
+}
+
+/*  Respnseive NavBar */
+@media (max-width: 768px) {
+  .navbar-app .toggle-icon {
+    display: block;
+    margin-left: 30px;
+  }
+
+  .navbar-app-nav .links {
+    display: none;
+  }
+
+  .navbar-app-nav .links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    width: 90%;
+    z-index: 10;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-radius: 0 0 3px 3px;
+    gap: 15px
+  }
+
+  .navbar-app-nav .links.open li a {
+    display: block;
+    padding: 10px;
+  }
+
+  .navbar-app-nav .links.open li a:hover {
+    background-color: #ccc;
+  }
+
+  .navbar-app-nav .links.open li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .navbar-app-nav .icons-shoping {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+  }
+}
+
+/*  Reponsive */
+@media (max-width: 992px) {
+  .navbar-app .logo {
+    gap: 5px;
+    width: 215px;
+    width: 200px;
+  }
+
+  .navbar-app .logo .navbar-app .logo h3 {
+    font-size: 22px;
+  }
+
+  .navbar-app .logo-circle {
+    width: 40px;
+    height: 40px;
+    margin-top: 3px;
+    display: none;
+  }
+
+  .navbar-app .container-fluid {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    position: relative;
+  }
+}
